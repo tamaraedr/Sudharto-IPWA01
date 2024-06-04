@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>CH4-Footprint</title>
+    <link href="CSS/bootstrap.css" rel="stylesheet" >
+    <link href="styles.css" rel="stylesheet">
+
+    <style type="text/css">
+    
+      .container h5 {text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: medium;}
+      #input {background-color: #FAC17F; border-color:#98520C; border-style: solid; border-radius: 15px;}
+      #input::placeholder {color: #613305; opacity: 1;}
+      .info {font-style: italic; text-align: center;}
+  
+      @media screen and (min-width: 1024px){
+        .container {margin: 0 auto; padding: 0 150px; }
+        .container h1 {text-align: center; font-size: 32px;}
+      }
+  
+      @media screen and (min-width:768px) and (max-width: 1023px){
+        .container {margin: 0 auto; padding: 0 70px; }
+        .container h1 {text-align: center; font-size: 31px;}
+      }
+  
+      @media screen and (max-width: 767px){
+        .container {margin: 0 auto; padding: 0 80px; }
+        .container h1 {text-align: center; font-size: 30px;}
+      }
+      </style>
+  </head>
+
+  <body>
+    <header class="text-center">
+    <h1><img class="logo" src="EcoAware-logo.png"></h1>
+    <h2>Emission Footprint</h2>
+    <nav>
+      <ul class="list-unstyled">
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="uns.html">Über uns</a></li>
+      </ul>
+    </nav>
+    </header>
+    <content>
+      
+      <div id="menu">
+        <ul class="list-unstyled">
+        <div id="menuheader">Klicken zum Verschieben</div>
+        
+        <li><a href="main.html">EcoMission</a></li>
+        <br>
+        <li><a href="CO2.html">CO2 Footprints</a></li>
+        <br>
+        <li><a href="N2O.html">NO2 Footprints</a></li>
+        <br>
+        <li><a href="CH4.html">CH4 Footprints</a></li>
+        </ul>
+    </div>
+    <br>
+      <div>
+      <div class="container">
+        <h1>CH4-Emissionsdaten</h1>
+        <br>
+        <h5> Erfahren Sie mehr über die CH4-Emissionen im Jahr 2023 von Unternehmen auf der ganzen Welt. Mit unseren detaillierten Emissions-Footprints, dargestellt in Tonnen Methan, können Sie die Umweltauswirkungen klar und verständlich nachvollziehen. </h5>
+        <br>
+        <p></p>
+        <input class="form-control" id="input" type="text" placeholder="Daten filtern">
+        <div id="error-message" style="color: red; display: none;">Ungültige Eingabe. Erlaubt sind nur alphanumerische Zeichen und Leerzeichen.</div>
+        <br>
+        <p class="info">(Bitte auf ,,Unternehmen'' bzw. auf ,,Land'' klicken, um die Daten nach Unternehmen bzw. nach Land zu sortieren)</p>
+      <table class="table" id="table1" >
+        <thead>
+          <tr>
+            <th scope="col" onclick="sortTable(0)">Unternehmen</th>
+            <th scope="col" onclick="sortTable(1)">Land</th>
+            <th scope="col">CH4 Emission (jährlich)</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr>
+            <td scope="row">Astra International</td>
+            <td>Indonesien</td>
+            <td>27592</td>
+          </tr>
+          <tr>
+            <td scope="row">Burgers.co</td>
+            <td>Vietnam</td>
+            <td>140302</td>
+          </tr>
+          <tr>
+            <td scope="row">Agropur Inc.</td>
+            <td>Luxemburg</td>
+            <td>29381</td>
+          </tr>
+          <tr>
+            <td scope="row">Archer Daniel</td>
+            <td>Mexiko</td>
+            <td>48101</td>
+          </tr>
+          <tr>
+            <td scope="row">Sanctuaries Co.</td>
+            <td>Indien</td>
+            <td>203471</td>
+          </tr>
+          <tr>
+            <td scope="row">Volkswagen AG</td>
+            <td>Deutschland</td>
+            <td>283491</td>
+          </tr>
+          <tr>
+            <td scope="row">BASF Corporation</td>
+            <td>Kolumbien</td>
+            <td>234901</td>
+          </tr>
+          <tr>
+            <td scope="row">Fintech, Inc.</td>
+            <td>Australien</td>
+            <td>49291</td>
+          </tr>
+          <tr>
+            <td scope="row">Alpine Corp.</td>
+            <td>Schweiz</td>
+            <td>203491</td>
+          </tr>
+          <tr>
+            <td scope="row">Repsol</td>
+            <td>Spanien</td>
+            <td>98171</td>
+          </tr>
+          <tr>
+            <td scope="row">JD.com Inc.</td>
+            <td>China</td>
+            <td>304917</td>
+          </tr>
+          <tr>
+            <td scope="row">Unilever</td>
+            <td>Großbritennien</td>
+            <td>939101</td>
+          </tr>
+          <tr>
+            <td scope="row">Hashoo Group</td>
+            <td>Pakistan</td>
+            <td>402819</td>
+          </tr>
+          <tr>
+            <td scope="row">Petrobras</td>
+            <td>Brazilien</td>
+            <td>409184</td>
+          </tr>
+          <tr>
+            <td scope="row">Coal India</td>
+            <td>Indien</td>
+            <td>1003824</td>
+          </tr>
+          <tr>
+            <td scope="row">ExxonMobil</td>
+            <td>USA</td>
+            <td>192381</td>
+          </tr>
+          <tr>
+            <td scope="row">Gillette Co</td>
+            <td>USA</td>
+            <td>382819</td>
+          </tr>
+          <tr>
+            <td scope="row">ABBVIE LTD</td>
+            <td>Irland</td>
+            <td>40918</td>
+          </tr>
+          <tr>
+            <td scope="row">Lowry Mine</td>
+            <td>Bhutan</td>
+            <td>492828</td>
+          </tr>
+          <tr>
+            <td scope="row">J R Kelly</td>
+            <td>USA</td>
+            <td>58583</td>
+          </tr>
+          <tr>
+            <td scope="row">Lauderdale</td>
+            <td>Japan</td>
+            <td>49810</td>
+          </tr>
+          <tr>
+            <td scope="row">Denco Container</td>
+            <td>Kanada</td>
+            <td>98828</td>
+          </tr>
+          <tr>
+            <td scope="row">Saudi Aramco</td>
+            <td>Saudi-Arabien</td>
+            <td>1039919</td>
+          </tr>
+          <tr>
+            <td scope="row">Petrochina</td>
+            <td>China</td>
+            <td>2049281</td>
+          </tr>
+          <tr>
+            <td scope="row">ConAgra Foods Inc</td>
+            <td>Belgien</td>
+            <td>399410</td>
+          </tr>
+          <tr>
+            <td scope="row">Devro, Inc</td>
+            <td>Mexiko</td>
+            <td>193910</td>
+          </tr>
+          <tr>
+            <td scope="row">Mubea, Inc</td>
+            <td>Norwegen</td>
+            <td>19391</td>
+          </tr>
+          <tr>
+            <td scope="row">Garyville Refinery</td>
+            <td>Singapur</td>
+            <td>85038</td>
+          </tr>
+          <tr>
+            <td scope="row">Vitol</td>
+            <td>Schweiz</td>
+            <td>293911</td>
+          </tr>
+            <tr>
+              <td scope="row">Trafigura</td>
+              <td>Singapur</td>
+              <td>379030
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Shell</td>
+              <td>Großbritannien</td>
+              <td>1049204
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Uniper</td>
+              <td>Deutschland</td>
+              <td>391901
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Toyota</td>
+              <td>Japan</td>
+              <td>402949
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Total Energies</td>
+              <td>Frankreich</td>
+              <td>3949004
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Stellantis</td>
+              <td>Niederlande</td>
+              <td>82401
+              </td>
+            </tr>   
+            <tr>
+              <td scope="row">Ford Motor Company</td>
+              <td>USA</td>
+              <td>302094
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Baowu</td>
+              <td>China</td>
+              <td>495792
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Valero Energy</td>
+              <td>USA</td>
+              <td>350579
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Alibaba</td>
+              <td>China</td>
+              <td>602759
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Reliance Industries</td>
+              <td>Indien</td>
+              <td>19349
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">BHP Group</td>
+              <td>Australien</td>
+              <td>840184
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Accentur</td>
+              <td>Irland</td>
+              <td>293942
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Softbank Group</td>
+              <td>Japan</td>
+              <td>33419
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Linde</td>
+              <td>Großbritannien</td>
+              <td>104919
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Royal Dutch Shell</td>
+              <td>Niederlande</td>
+              <td>209482
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Union PAC</td>
+              <td>USA</td>
+              <td>391244
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Anheuser-Busch</td>
+              <td>Belgien</td>
+              <td>1093814
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Bristol Myers</td>
+              <td>USA</td>
+              <td>559288
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </content>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="table.js"></script>
+    <script src="menu.js"></script>
+    <footer class="text-center">
+      <nav>
+        <ul class="list-inline">
+          <a class="list-inline-item" href="Datenschutz.html">Datenschutz</a>
+          <a class="list-inline-item" href="Impressum.html">Impressum</a>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

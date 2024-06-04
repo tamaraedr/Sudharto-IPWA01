@@ -1,0 +1,54 @@
+@media screen and (min-width: 1024px){
+      
+     
+    header {position: sticky; position: -webkit-sticky; top: 0; background-color:#FFF2DA;}
+    header h2 {color:chocolate;font-weight: 500; font-size: 300%; font-variant: small-caps;}
+    header nav ul {text-align: right; padding-right: 30px; padding-bottom: 10px;}
+    header nav ul li {display: inline; padding: 20px;}
+    header nav ul li a {font-family: Arial; color: saddlebrown; text-decoration: none;}
+    .logo {padding-top: 10px;height:55px;}
+
+    body{margin-left: 2px; margin-right: 2px;}
+    #menu { position: absolute; z-index: 9; background-color:bisque; text-align: center; border: 1px solid black; width: 170px; }
+    #menu li a{ list-style: none; color:black;}
+    #menuheader { cursor: move; z-index: 10; background-color:#DF750A; color:whitesmoke;}
+
+    footer { background-color: #98520C;}
+    footer nav ul a {color: cornsilk;}
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+    header {position: sticky; position: -webkit-sticky; top: 0; background-color:#FFF2DA;}
+    header h2 {color:chocolate;font-weight: 500; font-size: 300%; font-variant: small-caps;}
+    header nav ul {text-align: right; padding-right: 30px;padding-bottom: 10px;}
+    header nav ul li {display: inline; padding: 20px;}
+    header nav ul li a {font-family: Arial; color: saddlebrown; text-decoration: none;}
+    .logo {padding-top: 10px;height:55px;}
+
+    #menu {position: absolute; z-index: 9; background-color:bisque; text-align: center; border: 1px solid black; width: 100px;}
+    #menu li a{ list-style: none; color:black; font-size: small;}
+    #menuheader {cursor: move; z-index: 10; background-color:#DF750A; color:whitesmoke; font-size: small;}
+    
+    footer { background-color: #98520C;}
+    footer nav ul a {color: cornsilk;}
+}
+
+@media screen and (max-width: 767px){
+    
+   
+    header {position: sticky; position: -webkit-sticky; top: 0; background-color:#FFF2DA;}
+    header h2 {color:chocolate;font-weight: 500; font-size: 300%; font-variant: small-caps;}
+    header nav ul {text-align: right; padding-right: 30px; padding-bottom: 10px;}
+    header nav ul li {display: inline; padding: 10px;}
+    header nav ul li a {font-family: Arial; color: saddlebrown; text-decoration: none;}
+    .logo {padding-top: 10px;height:55px;}
+
+    body{margin-left: 2px; margin-right: 2px;}
+    #menu { position: absolute; z-index: 9; background-color:bisque; text-align: center; border: 1px solid black; width: 80px; }
+    #menu li a{ list-style: none; color:black; font-size: small;}
+    #menuheader { cursor: move; z-index: 10; background-color:#DF750A; color:whitesmoke; font-size: small;}
+
+    footer { background-color: #98520C;}
+    footer nav ul a {color: cornsilk;}
+}
